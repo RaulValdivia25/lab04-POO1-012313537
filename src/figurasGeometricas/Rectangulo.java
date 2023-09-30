@@ -7,7 +7,6 @@ public class Rectangulo
 	
 	public Rectangulo(float largo, float ancho) 
 	{
-		super();
 		this.largo = largo;
 		this.ancho = ancho;
 	}
