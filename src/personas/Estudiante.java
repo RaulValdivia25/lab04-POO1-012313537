@@ -80,4 +80,22 @@ public class Estudiante
 	{
 		this.curso = curso;
 	}
+	
+	public void mostrarInformacion()
+	{
+		int id = getId();
+		int edad = getEdad();
+		
+		float calificacion = getNota();
+		
+		String nombre = getNombre();
+		String apellido = getApellido();
+		String curso = getCurso();
+		
+		System.out.println("El nombre completo del estudiante es: " + nombre + " " + apellido);
+		System.out.println("El ID del estudiante es: " + id);
+		System.out.println("El edad del estudiante es: " + edad);
+		System.out.println("La calificacion del estudiante es: " + calificacion);
+		System.out.println("El curso que estudia el estudiante es: " + curso);
+	}
 }

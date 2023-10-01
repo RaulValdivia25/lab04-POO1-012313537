@@ -42,4 +42,18 @@ public class Triangulo
 	{
 		this.vertice3 = vertice3;
 	}
+	
+	public void mostrarInformacion()
+	{
+		Punto vertice1 = getVertice1();
+		Punto vertice2 = getVertice2();
+		Punto vertice3 = getVertice3();
+		
+		System.out.println("La informacion del vertice 1 es: ");
+		vertice1.mostrarInformacion();
+		System.out.println("La informacion del vertice 2 es: ");
+		vertice2.mostrarInformacion();
+		System.out.println("La informacion del vertice 3 es: ");
+		vertice3.mostrarInformacion();
+	}
 }

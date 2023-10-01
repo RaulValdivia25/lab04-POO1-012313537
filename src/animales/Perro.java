@@ -26,7 +26,7 @@ public class Perro
 		this.nombre = nombre;
 	}
 
-	public String geTipotRaza() 
+	public String getTipoRaza() 
 	{
 		return raza;
 	}
@@ -56,5 +56,17 @@ public class Perro
 		this.edad = edad;
 	}
 	
-	
+	public void mostrarInformacion()
+	{
+		String nombre = getNombre();
+		String raza = getTipoRaza();
+		String color = getColor();
+		
+		int edad = getEdad();
+		
+		System.out.println("El nombre del perro es: " + nombre);
+		System.out.println("La raza del perro es: " + raza);
+		System.out.println("El color del perro es: " + color);
+		System.out.println("La edad del perro es: " + edad);
+	}
 }

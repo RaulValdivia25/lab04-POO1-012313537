@@ -65,4 +65,18 @@ public class Circulo
 		
 		return perimetro;
 	}
+	
+	public void mostrarInformacion()
+	{
+		double radio = getRadio();
+		
+		String color = getColor();
+		
+		Punto centro = getCentro();
+		
+		System.out.println("El radio del circulo es: " + radio);
+		System.out.println("El color del circulo es: " + color);
+		System.out.println("Los datos del centro son: ");
+		centro.mostrarInformacion();
+	}
 }

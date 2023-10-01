@@ -43,4 +43,15 @@ public class Rectangulo
 		
 		return area;
 	}
+	
+	public void mostrarInformacion()
+	{
+		float largo = getLargo();
+		float ancho = getAncho();
+		float area = getArea();
+		
+		System.out.println("La medida del largo es: " + largo);
+		System.out.println("La medida del ancho es: " + ancho);
+		System.out.println("La medida del area es: " + area);
+	}
 }

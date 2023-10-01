@@ -2,21 +2,21 @@ package figurasGeometricas;
 
 public class Figura 
 {
-	private String nombre;
+	private String tipoNombre;
 
-	public Figura(String nombre) 
+	public Figura(String tipoNombre) 
 	{
-		this.nombre = nombre;
+		this.tipoNombre = tipoNombre;
 	}
 
-	protected String getNombre() 
+	protected String getTipoNombre() 
 	{
-		return nombre;
+		return tipoNombre;
 	}
 
-	protected void setNombre(String nombre) 
+	protected void setTipoNombre(String tipoNombre) 
 	{
-		this.nombre = nombre;
+		this.tipoNombre = tipoNombre;
 	}
 	
 	 public double getArea()
@@ -27,5 +27,12 @@ public class Figura
 	 public boolean isRegular()
 	 {
 		 return false;
+	 }
+	 
+	 public void mostrarInformacion()
+	 {
+		 String tipoNombre = getTipoNombre();
+		 
+		 System.out.println("El nombre del tipo de la figura es: " + tipoNombre);
 	 }
 }

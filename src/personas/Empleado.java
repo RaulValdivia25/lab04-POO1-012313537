@@ -68,4 +68,19 @@ public class Empleado
 		
 		return salarioAnual;
 	}
+	
+	public void mostrarInformacion()
+	{
+		int id = getId();
+		int salario = getSalario();
+		int salarioAnual = getSalarioAnual();
+		
+		String nombre = getNombre();
+		String apellido = getApellido();
+		
+		System.out.println("El nombre completo del empleado es: " + nombre + " " + apellido);
+		System.out.println("El ID del empleado es: " + id);
+		System.out.println("El salario del empleado es: " + salario);
+		System.out.println("El salario anual del empleado es: " + salarioAnual);
+	}
 }
